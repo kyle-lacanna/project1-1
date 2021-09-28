@@ -1,16 +1,78 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: RGB(190, 173, 144);
+  }
+
+  h1 {
+    font-size: 55px;
+    font-family: 'Permanent Marker', cursive;  
+  }
+
+  main {
+    flex-grow: 1;
+    flex-basis: 0;
+    color: RGB(166, 47, 49);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: RGB(166, 47, 49);
+    
+  }
+
+  header, footer {
+    font-size: 12px;
+  }
+
+  .middler {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   
+  .middler > h1 > a {
+    text-decoration: none;
+    color: RGB(166, 47, 49); 
+  }
+
+  .middler > h1 > a:hover {
+    color: white;
+  }
+
+  .image-middler {
+    margin: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .image-middler > img:hover {
+    transform: scale(1.2);
+  }
+
+  .image-middler > img{
+    border: 3px black solid;
+    box-shadow: 0 0 10px white;
+    max-width: 450px;
+    height: auto;
+  }
+
   .navlinks {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: lightgray;
+    background-color: khaki;
   
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
   }
   
   .navlink > a {
@@ -25,4 +87,6 @@ body {
   .navlink > a:hover {
     background-color: gray;
   }
+
+  
   
