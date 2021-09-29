@@ -1,0 +1,32 @@
+.child-europa {
+    position: absolute;
+    color: black;
+    top: 275px;
+    left: 475px;
+    height: 20px;
+}
+
+.gallery {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .gallery > img {
+    display: inline;
+    max-width: 400px;
+    min-width: 200px;
+    max-height: 500px;
+    padding: 5px;
+    margin: 30px;
+  }
+
+  .gallery > img:hover {
+    transform: scale(1.1);
+    background-color: RGB(166, 47, 49);
+  }
+
+  h2 {
+    color: black;
+  }
