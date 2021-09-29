@@ -1,19 +1,40 @@
-.child-europa {
-    position: absolute;
-    color: black;
-    top: 275px;
-    left: 475px;
-    height: 20px;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
-.gallery {
-    position: relative;
+
+h2 {
+    margin-left: 500px;
+    margin-top: -150px;
+    padding-bottom: 100px;
+}
+
+#contact-info {
+    margin-left: 500px;
+    margin-top: -300px;
+    margin-right: 100px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    color: black;
+}
+
+.image-middler > aside {
+    color: black;
+    height: 20px;
+    left: 475px;
+
+}
+
+.image-middler {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  .gallery > img {
+  .image-middler > img {
     display: inline;
     max-width: 400px;
     min-width: 200px;
@@ -22,7 +43,7 @@
     margin: 30px;
   }
 
-  .gallery > img:hover {
+  .image-middler > img:hover {
     transform: scale(1.1);
     background-color: RGB(166, 47, 49);
   }

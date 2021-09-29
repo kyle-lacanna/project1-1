@@ -1,3 +1,7 @@
+p {
+  margin-left: 500px;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -9,6 +13,7 @@ body {
 
   h1 {
     font-size: 55px;
+    color: black;
     font-family: 'Permanent Marker', cursive;  
     margin: 20px;
     flex-wrap: wrap;
@@ -19,34 +24,25 @@ body {
     flex-basis: 0;
     color: white;
     max-height: 400px;
+    align-items:center;
   }
 
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    color: RGB(166, 47, 49);
-    font-family: sans-serif;
-    
-  }
-
-  header, footer, main {
+  header, footer {
     font-size: 12px;
   }
 
-  .middler {
+  .middler > main {
     flex-grow: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
   }
   
-  .middler > h1 > a {
+  .middler > main > h1 > a {
     text-decoration: none;
     color: RGB(166, 47, 49); 
   }
 
-  .middler > h1 > a:hover {
+  .middler > main > h1 > a:hover {
     color: gray;
   }
 
@@ -58,11 +54,11 @@ body {
     justify-content: center;
   }
 
-  .image-middler > img:hover {
+  .middler > .image-middler > #main-img:hover {
     transform: scale(1.1);
   }
 
-  .image-middler > img {
+  .image-middler > #main-img {
     border: 3px RGB(166, 47, 49) solid;
     box-shadow: 0 0 5px black;
     min-width: 20%;
@@ -106,12 +102,24 @@ body {
   }
 
   @media (max-width: 400px) {
-    .middler > h1 {
-      font-size: 22px !important;
+    .middler > main > h1 {
+      font-size: 30px !important;
     }
 
     .navlink > a {
       font-size: 1.0em;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .middler >.image-middler > img {
+      width: 75%;
+      height: auto;
+    }
+
+    .middler > .image-middler > h2 {
+      margin: 10px;
+      padding: 10px;
     }
   }
   
