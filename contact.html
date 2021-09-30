@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
-    <head lang="English">
+<html lang="en">
+    <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-        <title>Design</title>
+        <link rel="shortcut icon" href="images/thumbs-up.ico" type="image/x-icon">
+        <title>Contact Me</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/forms.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>
         <header>
@@ -21,8 +24,20 @@
         </header>
             <div class="middler">
                 <main>
-                    <h1><a href="index.html">Nick Loeloff</a></h1>
+                    <h1><a href="index.html">Nick Loeloff</a> Contact Me</h1>
                 </main>
             </div>
+            <aside class="middle">
+                <h3 class="form-title">
+                    Fill in the correct contact information below to send a message
+                    to Nick.
+                </h3>
+                <aside id="input">                
+                    <p>Email: <input id="email" type="text"></p>
+                    <p>Phone Number: <input id="number" type="tel"></p>
+                    <p id="question">Question: </p><textarea></textarea>
+                    <button>Submit Question</button>
+                </aside>
+            </aside>
     </body>
 </html>

@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+p {
+    margin-left: 5%;
+}
+
+#email, #number {
+    width: 185px;
+    height: 23.5px;
+}
+
+#question {
+    position: absolute;
+}
+
+textarea {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 150px;
+    margin-left: 150px;
+    font-family: serif;
+}
+
+button {
+    display: block;
+    padding: 5px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+.middle > #input {
+    margin-left: 5%;
+}
+
+label > #questions {
+    margin-top: 0;
+}
+
+.middle > .form-title {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-direction:normal;
+  margin-top: 20px;
+  margin-left: 5%;
+  position: relative;
+
+}
+
+.middle > #input {
+    justify-content: left;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 5%;
+      width: 100%;
+    }
+  }
+  
+.image-middler {
+    justify-content: flex-start;
+}
+
+@media (max-width: 300px) {
+    .middle > .input {
+        max-width: 50%;
+    }
+}
